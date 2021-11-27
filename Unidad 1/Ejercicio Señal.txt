@@ -1,0 +1,17 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity signals is
+  port (a, b, c, d: in std_logic; 
+	f: out std_logic);
+end signals;
+
+use work.gates.all;
+
+architecture estructural of circuitoe1 is
+   signal s1, s2: std_logic;
+begin
+   s1 <= a and b;
+   s2 <= c xor d;
+   d <= s1 or s2;
+end estructural;

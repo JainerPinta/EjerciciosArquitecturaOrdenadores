@@ -1,0 +1,5 @@
+--Ejercicio en clase
+entity Ejercicio1 is
+port(a, b, c, d, e, f, g, h: in bit;
+	F1: out bit);
+end Ejercicio1;
